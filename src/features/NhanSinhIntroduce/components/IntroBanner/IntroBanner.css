@@ -1,0 +1,168 @@
+.IntroBanner{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    /* width: 100vw; */
+    height: 1000px;
+    /* background-image: url('../../../../assets/images/BackgroundNhanSinh.jpg');
+    background-size: cover;
+    background-position: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.IB-baclground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.IB-body{
+    position: absolute;
+    top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.IB-baclground img{
+    height: 100%;
+    width: 100%;
+    /* max-width: 600px; */
+}
+.IB-logo{
+    width: 100%;
+    max-width: 150px;
+    /* max-height: 5vh; */
+}
+.IB-logo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.IB-line{
+    width: 100%;
+    max-width: 300px;
+}
+.IB-Title{
+    margin:25px 0 0;
+}
+.IB-intro{
+    margin-top: 20px;
+}
+.IB-line img{
+    width: 100%;
+}
+.IB-CircleNUmberic{
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+    /* height: 40vmin; */
+    pointer-events: none;
+}
+.IB-CircleNUmberic img{
+    width: 100%;
+}
+.IB-intro2{
+    margin-top: 30px;
+}
+.IB-intro2 img{
+    width: 100%;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .IB-CircleNUmberic img{
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:1280px){
+    .IntroBanner{
+        height: 850px;
+    }
+    .IB-logo{
+        max-width: 120px;
+    }
+    .IB-line{
+        max-width: 250px;
+    }
+    .IB-Title{
+        margin:15px 0 0;
+    }
+    .IB-intro{
+        margin-top: 15px;
+    }
+    .IB-CircleNUmberic{
+        max-width: 400px;
+        margin-top: 20px;
+        pointer-events: none;
+    }
+    .IB-intro2{
+        margin-top: 20px;
+    }
+}
+@media (max-width:600px){
+    .IntroBanner{
+        height: 750px;
+    }
+    .IB-logo{
+        max-width: 100px;
+    }
+    .IB-line{
+        max-width: 200px;
+    }
+    .IB-Title{
+        margin:15px 0 0;
+    }
+    .IB-intro{
+        margin-top: 15px;
+        max-width: 250px;
+    }
+    .IB-intro img{
+        width: 100%;
+    }
+    .IB-CircleNUmberic{
+        max-width: 350px;
+        margin-top: 20px;
+        pointer-events: none;
+    }
+    .IB-intro2{
+        margin-top: 20px;
+        max-width: 250px;
+    }
+    .IB-intro2 img{
+        width: 100%;
+    }
+}
+@media (max-width:480px){
+    .IntroBanner{
+        height: 700px;
+    }
+    .IB-logo{
+        max-width: 80px;
+    }
+    .IB-Title{
+        margin:15px 0 0;
+    }
+    .IB-intro{
+        margin-top: 15px;
+        max-width: 230px;
+    }
+    .IB-CircleNUmberic{
+        max-width: 300px;
+        margin-top: 20px;
+        pointer-events: none;
+    }
+    .IB-intro2{
+        margin-top: 20px;
+        max-width: 180px;
+    }
+}

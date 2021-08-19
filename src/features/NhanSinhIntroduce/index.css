@@ -1,0 +1,37 @@
+.Content-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px ;
+}
+
+/* .Content-container button{
+    position: absolute;
+    top: 0.55rem;
+    left: 0.4rem;
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+    color: ${props => props.theme.colors.main};
+    margin-bottom: 3rem;
+    cursor: pointer;
+} */
+
+@media (max-width:1280px){
+    .Content-container{
+        padding: 50px 5%;
+    }
+    .Content-container h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:600px){
+    .Content-container h1{
+        font-size: 24px;
+    }
+}
+@media (max-width:480px){
+    .Content-container h1{
+        font-size: 18px;
+    }
+}

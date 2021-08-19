@@ -1,7 +1,11 @@
 import { Fragment } from "react";
 import styled from "styled-components";
 import { Link, useHistory } from "react-router-dom";
+
+import IntroBanner from './components/IntroBanner/IntroBanner';
+
 import { InforContainer, Wrapper } from "../../assets/styles";
+import './index.css';
 
 const NhanSinhIntroduce = (props) => {
 	// const { path, title, content } = props;
@@ -13,11 +17,9 @@ const NhanSinhIntroduce = (props) => {
 	}, 100);
 
 	return (
-		<Wrapper>
-			<InforContainer>
-				<button
-					onClick={() => history.goBack()}
-					className='fas fa-arrow-left'></button>
+		<div className="NhanSinhIntro">
+			<IntroBanner />
+			<div className="Content-container">
 				<Fragment>
 					<h1 style={{ textTransform: "uppercase" }}>
 						TỔNG QUAN MINH TRIẾT NHÂN SINH
@@ -107,8 +109,8 @@ const NhanSinhIntroduce = (props) => {
 						Tìm hiểu thêm
 					</Button>
 				</Typography>
-			</InforContainer>
-		</Wrapper>
+			</div>
+		</div>
 	);
 };
 

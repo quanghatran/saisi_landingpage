@@ -6,7 +6,6 @@ import Button from '../../../../components/Button';
 import { Wrapper } from '../../../../assets/styles';
 import useFetch from '../../../../api/CustomHooks/useFetch';
 
-
 const Images = () => {
     const { data, isPending, error } = useFetch(process.env.REACT_APP_API_URL + 'Images');
     let settings = {
@@ -19,7 +18,6 @@ const Images = () => {
         arrows:false,
         dots: true,
     };
-
 
     const is838px = useMediaQuery({ query: '(max-width: 838px)' });
     const is638px = useMediaQuery({ query: '(max-width: 638px)' });

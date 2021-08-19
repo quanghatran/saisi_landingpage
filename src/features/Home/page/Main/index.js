@@ -3,6 +3,7 @@ import Categories from "../../components/Categories";
 import Commitment from "../../components/Commitment";
 import Images from "../../components/Images";
 import Introduction from "../../components/Introduction"
+import StudyProgram from "../../components/StudyProgram/StudyProgram";
 import Itinerary from "../../components/Itinerary";
 import Prestige from "../../components/Prestige";
 import Feedbacks from "../../components/Feedbacks";
@@ -19,6 +20,7 @@ const Main = () => {
             <Categories />
             <Commitment />
             <Itinerary />
+            <StudyProgram />
             <Images />
             <Feedbacks />
             <Posts />
