@@ -1,16 +1,16 @@
 import { Fragment } from "react";
 import styled from "styled-components";
-import { Link, useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 import IntroBanner from './components/IntroBanner/IntroBanner';
 
-import { InforContainer, Wrapper } from "../../assets/styles";
+// import { InforContainer, Wrapper } from "../../assets/styles";
 import './index.css';
 
 const NhanSinhIntroduce = (props) => {
 	// const { path, title, content } = props;
 
-	const history = useHistory();
+	// const history = useHistory();
 
 	setTimeout(function () {
 		window.scrollTo(0, 0);
@@ -25,14 +25,14 @@ const NhanSinhIntroduce = (props) => {
 						TỔNG QUAN MINH TRIẾT NHÂN SINH
 					</h1>
 
-					<Typography>
+					<Typography style={{fontStyle:"italic"}}>
 						<b>Lời ngỏ:</b> ‘’Minh triết nhân sinh’’ là một trong các dự án mang
 						giá trị tinh thần to lớn, với mong muốn được cống hiến các dòng giá
 						trị minh triết của chính cá nhân tích luỹ qua các trải nghiệm cá
 						nhân, nghiên cứu khoa học để tìm ra công cụ áp dụng vào việc cho mọi
 						người một định hướng minh triết nhất.
 					</Typography>
-					<Typography>
+					<Typography style={{fontStyle:"italic"}}>
 						Định hướng minh triết, tương lai minh triết là những gì tôi ấp ủ qua
 						năm tháng mong được truyền tải tới mọi người. Chúc cho các bạn, nhờ
 						vào công cụ khoa học tôi dành thời gian nghiên cứu nói riêng, Viên
@@ -43,7 +43,7 @@ const NhanSinhIntroduce = (props) => {
 						tư vấn của tôi, là động lực và niềm hạnh phúc lớn lao đỡ bước tôi
 						thêm quyết liệt trên hành trình phụng sự cộng đồng.
 					</Typography>
-					<Typography>
+					<Typography style={{fontStyle:"italic"}}>
 						Đây là một công trình nghiên cứu của phương Tây được áp dụng vào
 						việc định hướng cuộc sống cho bất cứ ai đang chênh vênh trên nẻo
 						đường đi tìm sứ mệnh cá nhân. Thông qua các con số với các dạng năng

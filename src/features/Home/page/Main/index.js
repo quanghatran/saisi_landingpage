@@ -10,22 +10,28 @@ import Feedbacks from "../../components/Feedbacks";
 import Posts from "../../components/Posts";
 import Condition from "../../components/Condition";
 import Partner from "../../components/Partner";
+import VerticalBanner from '../../components/ VerticalBanner/ VerticalBanner';
+
+import './Main.css';
 
 const Main = () => {
     return (  
         <>
             <Banner />
-            <Introduction />
-            <Prestige />
-            <Categories />
-            <Commitment />
-            <Itinerary />
-            <StudyProgram />
-            <Images />
-            <Feedbacks />
-            <Posts />
-            <Condition />
-            <Partner />
+            <div className="Main-body">
+                <VerticalBanner />
+                <Introduction />
+                <Prestige />
+                <Categories />
+                <Commitment />
+                <Itinerary />
+                <StudyProgram />
+                <Images />
+                <Feedbacks />
+                <Posts />
+                <Condition />
+                <Partner />
+            </div>
         </>
     );
 }

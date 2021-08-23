@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import PropTypes from 'prop-types'
 import SliderImages from '../SliderBanner/SliderBanner';
 
 import HK1 from '../../../../assets/images/hangkhong1.jpeg';

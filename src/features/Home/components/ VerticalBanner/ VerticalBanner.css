@@ -1,0 +1,231 @@
+.VerticalBanner{
+    margin-left: 10px;
+    position: absolute;
+    top: 3.5rem;
+    height: 100%;
+    width: 300px;
+    z-index: 1;
+    cursor: pointer;
+    
+}
+.Stiky{
+    position: sticky;
+    top: 100px;
+    width: 100%;
+}
+.VB-background{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    
+}
+.VB-background img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.VB-body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.VB-logo{
+    width: 150px;
+}
+.VB-Title{
+    margin-top: 15px;
+}
+.VB-logo img{
+    width: 100%;
+}
+.VB-line{
+    width: 70%;
+}
+.VB-line img{
+    width: 100%;
+}
+.VB-intro{
+    width: 65%;
+    margin-top: 20px;
+}
+.VB-intro img{
+    width: 100%;
+}
+.VB-CircleNUmberic{
+    margin: 20px 0;
+    width: 80%;
+}
+.VB-CircleNUmberic img{
+    width: 100%;
+}
+.VB-intro2{
+    width: 70%;
+}
+.VB-intro2 img{
+    width: 100%;
+}
+.VerticalBannerMobile{
+    display: none;
+}
+.Clear-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #979494;
+    border-radius: 0 5px 0 0;
+    z-index: 3;
+    padding: 3px;
+    cursor: pointer;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .VB-CircleNUmberic img{
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:1800px){
+    .VerticalBanner{
+        width: 200px;
+    }
+    .VB-background{
+        height: 500px;
+    }
+    .VB-intro{
+        display: none;
+    }
+    .VB-intro2{
+        width: 80%;
+    }
+    .VB-logo{
+        width: 100px;
+    }
+    .VB-line{
+        width: 75%;
+    }
+    .VB-CircleNUmberic{
+        width: 90%;
+    }
+}
+
+
+@media (max-width:1200px){
+    .Stiky{
+        display: none;
+    }
+    .VerticalBannerMobile{
+        display: flex;
+        height: 300px;
+        width: 150px;
+        position: fixed;
+        bottom: 10px;
+    }
+    .VBM-background{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        
+    }
+    .VBM-background img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .VBM-body{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .VBM-logo{
+        margin-top: 10px;
+        width: 60px;
+    }
+    .VBM-logo img{
+        width: 100%;
+    }
+    .VBM-line{
+        width: 70%;
+    }
+    .VBM-line img{
+        width: 100%;
+    }
+    .VBM-intro{
+        width: 65%;
+        margin-top: 20px;
+    }
+    .VBM-intro img{
+        width: 100%;
+    }
+    .VBM-CircleNUmberic{
+        margin: 20px 0;
+        width: 80%;
+    }
+    .VBM-CircleNUmberic img{
+        width: 100%;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+        .VBM-CircleNUmberic img{
+            animation: App-logo-spin infinite 20s linear;
+        }
+    }
+    
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+}
+
+@media (max-width:600px){
+    .VerticalBannerMobile{
+        height: 260px;
+        width: 110px;
+    }
+    .VBM-logo{
+        width: 50px;
+    }
+    .VBM-line{
+        width: 95%;
+    }
+    .VBM-CircleNUmberic{
+        margin:0;
+        width: 120%;
+    }
+    .VBM-CircleNUmberic img{
+        width: 100%;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+        .VBM-CircleNUmberic img{
+            animation: App-logo-spin infinite 20s linear;
+        }
+    }
+    
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+}

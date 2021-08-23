@@ -200,14 +200,14 @@ const Subtitle = styled.h3`
 	margin-bottom: 2rem;
 `;
 
-const ListWrapper = styled.ul`
-	list-style-type: circle;
-	padding-left: 3rem;
-`;
+// const ListWrapper = styled.ul`
+// 	list-style-type: circle;
+// 	padding-left: 3rem;
+// `;
 
-const List = styled.li`
-	font-size: 1.6rem;
-	padding: 0.5rem 0px;
-`;
+// const List = styled.li`
+// 	font-size: 1.6rem;
+// 	padding: 0.5rem 0px;
+// `;
 
 export default SmartRooms;
