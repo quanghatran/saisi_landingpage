@@ -19,9 +19,9 @@ function MinhtrietBanner(props) {
         >
           <Clear />
         </div>
-        <Link to='/gioi-thieu-minh-triet-nhan-sinh'>
+        <a href='https://minhtrietnhansinh.com/' target="_blank" rel="noreferrer">
           <img className={classes.img} src={bannerImage} alt='banner'></img>
-        </Link>
+        </a>
       </div>
     )
   );
