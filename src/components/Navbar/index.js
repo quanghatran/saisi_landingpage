@@ -286,6 +286,14 @@ const Navbar = () => {
                         PHÒNG HỌC THÔNG MINH
                       </Link>
                     </DropdownItem>
+                    <DropdownItem>
+                      <Link
+                        onClick={handleClickLink}
+                        to='/nen-tang-cong-nghe'
+                      >
+                        NỀN TẢNG CÔNG NGHỆ
+                      </Link>
+                    </DropdownItem>
                   </DropdownMenu>
                 ) : (
                   ''

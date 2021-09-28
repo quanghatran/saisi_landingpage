@@ -37,6 +37,7 @@ const TrainingCourses = lazy(() =>
 
 const Tech = lazy(() => import('./features/Tech'));
 const SmartRooms = lazy(() => import('./features/Tech/SmartRooms'));
+const BaseTech = lazy(() => import('./features/Tech/BaseTech/BaseTech'));
 
 const Posts = lazy(() => import('./features/Posts'));
 const OfficeRooms = lazy(() => import('./features/Posts/page/OfficeRooms'));
@@ -89,6 +90,7 @@ function App() {
 
           <Route path='/khoa-hoc-cong-nghe' component={Tech} />
           <Route path='/phong-học-thong-minh' component={SmartRooms} />
+          <Route path='/nen-tang-cong-nghe' component={BaseTech} />
 
           <Route path='/tin-tuc' component={Posts} />
           <Route
