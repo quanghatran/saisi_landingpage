@@ -34,7 +34,7 @@ const Main = () => {
       <Banner />
       <div className='Main-body'>
         <ThemeProvider theme={theme}>
-          <MinhtrietBanner />
+          {/* <MinhtrietBanner /> */}
         </ThemeProvider>
 
         {/* <VerticalBanner /> */}
