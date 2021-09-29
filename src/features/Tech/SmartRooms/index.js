@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom';
 import { InforContainer, Wrapper } from '../../../assets/styles';
 import smartRooms1 from '../../../assets/images/smartRooms1.png';
 import smartRooms_2 from '../../../assets/images/smartRooms_2.jpg';
-import pdf1 from '../../../assets/images/pdf/pdf5.jpg';
 
 const SmartRooms = (props) => {
   // const { path, title, content } = props;
@@ -29,7 +28,6 @@ const SmartRooms = (props) => {
             MÔ HÌNH PHÒNG HỌC THÔNG MINH TÍCH HỢP TRỰC TUYẾN TƯƠNG TÁC VÀ DI
             ĐỘNG SATSI SMARTCLASS
           </Subtitle>
-          <img src={pdf1} alt='' style={{ width: '80%' }} />
           <Typography>
             <i>
               Trong bối cảnh toàn cầu hoá, mọi quốc gia đều đang tập trung nâng

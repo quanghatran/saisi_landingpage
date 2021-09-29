@@ -294,6 +294,14 @@ const Navbar = () => {
                         NỀN TẢNG CÔNG NGHỆ
                       </Link>
                     </DropdownItem>
+                    <DropdownItem>
+                      <Link
+                        onClick={handleClickLink}
+                        to='/thiet-ke-web'
+                      >
+                        THIẾT KẾ WEBSITE
+                      </Link>
+                    </DropdownItem>
                   </DropdownMenu>
                 ) : (
                   ''

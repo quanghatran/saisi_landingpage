@@ -28,7 +28,7 @@ const useStyle = makeStyles((theme) => ({
     textAlign: 'center',
     '& h1': {
       padding: '30px',
-
+      color: '#721b00',
       textTransform: 'uppercase',
       fontSize: '2.8rem',
     },
@@ -37,6 +37,9 @@ const useStyle = makeStyles((theme) => ({
     width: '80%',
     margin: '15px auto',
     maxWidth: 1200,
+    [theme.breakpoints.down('xs')]: {
+      margin: '5px auto',
+    },
   },
 }));
 const images = [
