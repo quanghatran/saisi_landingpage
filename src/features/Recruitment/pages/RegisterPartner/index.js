@@ -11,6 +11,7 @@ const RegisterPartner = () => {
   const [email, setEmail] = useState('');
   const [address, setAddress] = useState('');
   const [company, setCompany] = useState('');
+  const [password, setPassword] = useState('');
   const [presenter, setPresenter] = useState('');
   const [phonePresenter, setPhonePresenter] = useState('');
   const [codeCompany, setCodeCompany] = useState('');
@@ -22,17 +23,18 @@ const RegisterPartner = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const inforCustomer = {
-      Name: name,
-      PhoneNumber: phoneNumber,
-      Email: email,
-      Adress: address,
-      Company: company,
-      Presenter: presenter,
-      PhonePresenter: phonePresenter,
-      CodeCompany: codeCompany,
+      name,
+      phone: phoneNumber,
+      email,
+      password,
+      address,
+      addressWork: company,
+      namePresenter: presenter,
+      phonePresenter,
+      idBranchWork: codeCompany,
     };
 
-    fetch(`${process.env.REACT_APP_API_URL_ANA}CTV`, {
+    fetch(`${process.env.REACT_APP_API_URL_NEW}api/collaborator/signup`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(inforCustomer),
@@ -46,14 +48,14 @@ const RegisterPartner = () => {
       })
       .then((data) => {
         setResult(data);
-        setName('');
-        setEmail('');
-        setPhoneNumber('');
-        setAddress('');
-        setCompany('');
-        setPresenter('');
-        setPhonePresenter('');
-        setCodeCompany('');
+        // setName('');
+        // setEmail('');
+        // setPhoneNumber('');
+        // setAddress('');
+        // setCompany('');
+        // setPresenter('');
+        // setPhonePresenter('');
+        // setCodeCompany('');
 
         if (data.status === 1) {
           setPopup(true);
@@ -119,6 +121,15 @@ const RegisterPartner = () => {
           </div>
         </div>
         <div className='form-row'>
+          <div className='input-data'>
+            <input
+              type='password'
+              value={password}
+              required
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <label>Password</label>
+          </div>
           <div className='input-data'>
             <input
               type='text'
